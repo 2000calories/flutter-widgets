@@ -2571,7 +2571,7 @@ class RenderRadialAxisWidget extends RenderBox {
       if (!((i == 0 && !showFirstLabel) ||
           (i == _axisLabels!.length - 1 &&
               !showLastLabel &&
-              _isMaxiumValueIncluded))) {
+              !_isMaxiumValueIncluded))) {
         final CircularAxisLabel label = _axisLabels![i];
         final Color labelColor = label.labelStyle.color ??
             _gaugeThemeData.axisLabelColor ??
